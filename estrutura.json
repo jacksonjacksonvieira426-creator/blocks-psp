@@ -1,0 +1,3322 @@
+{
+  "jar": "Blocks.jar",
+  "nome_projeto": "blocks",
+  "midlet": "Blocks",
+  "canvas": "BlocksCanvas",
+  "classes": [
+    {
+      "arquivo": "Blocks.class",
+      "nome": "Blocks",
+      "super": "MIDlet",
+      "campos": [
+        {
+          "nome": "startCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "goCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "exitCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "restartCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "bcanvas",
+          "desc": "LBlocksCanvas;",
+          "tipo_c": "BlocksCanvas*"
+        },
+        {
+          "nome": "bhelp",
+          "desc": "LBlocksHelp;",
+          "tipo_c": "BlocksHelp*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 75,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.<init>": 1,
+            "javax/microedition/lcdui/Command.<init>": 4,
+            "javax/microedition/lcdui/Displayable.addCommand": 4,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 2
+          },
+          "constantes": [
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              31,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/midlet/MIDlet.<init>"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              16,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              32,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              44,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              49,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              53,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              64,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              69,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              73,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ]
+          ],
+          "fields": [
+            [
+              9,
+              "putfield",
+              "Blocks.startCommand"
+            ],
+            [
+              17,
+              "putfield",
+              "Blocks.goCommand"
+            ],
+            [
+              25,
+              "putfield",
+              "Blocks.exitCommand"
+            ],
+            [
+              33,
+              "putfield",
+              "Blocks.restartCommand"
+            ],
+            [
+              39,
+              "putfield",
+              "Blocks.bhelp"
+            ],
+            [
+              41,
+              "getfield",
+              "Blocks.bhelp"
+            ],
+            [
+              43,
+              "getfield",
+              "Blocks.goCommand"
+            ],
+            [
+              46,
+              "getfield",
+              "Blocks.bhelp"
+            ],
+            [
+              48,
+              "getfield",
+              "Blocks.exitCommand"
+            ],
+            [
+              51,
+              "getfield",
+              "Blocks.bhelp"
+            ],
+            [
+              59,
+              "putfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              61,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              63,
+              "getfield",
+              "Blocks.startCommand"
+            ],
+            [
+              66,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              68,
+              "getfield",
+              "Blocks.exitCommand"
+            ],
+            [
+              71,
+              "getfield",
+              "Blocks.bcanvas"
+            ]
+          ]
+        },
+        {
+          "nome": "startApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 6,
+          "apis": {
+            "javax/microedition/lcdui/Display.getDisplay": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "Blocks.bhelp"
+            ]
+          ]
+        },
+        {
+          "nome": "pauseApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "destroyApp",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 59,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2,
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Display.getDisplay": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1,
+            "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+          },
+          "constantes": [
+            [
+              54,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              33,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              57,
+              "javax/microedition/midlet/MIDlet.notifyDestroyed"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Blocks.startCommand"
+            ],
+            [
+              5,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              7,
+              "getfield",
+              "Blocks.startCommand"
+            ],
+            [
+              10,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              12,
+              "getfield",
+              "Blocks.exitCommand"
+            ],
+            [
+              15,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              17,
+              "getfield",
+              "Blocks.restartCommand"
+            ],
+            [
+              20,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              22,
+              "getfield",
+              "Blocks.exitCommand"
+            ],
+            [
+              25,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              30,
+              "getfield",
+              "Blocks.goCommand"
+            ],
+            [
+              35,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              39,
+              "putfield",
+              "Blocks.bhelp"
+            ],
+            [
+              43,
+              "getfield",
+              "Blocks.restartCommand"
+            ],
+            [
+              46,
+              "getfield",
+              "Blocks.bcanvas"
+            ],
+            [
+              51,
+              "getfield",
+              "Blocks.exitCommand"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/midlet/MIDlet.<init>": 1,
+        "javax/microedition/lcdui/Command.<init>": 4,
+        "javax/microedition/lcdui/Displayable.addCommand": 6,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 2,
+        "javax/microedition/lcdui/Display.getDisplay": 2,
+        "javax/microedition/lcdui/Display.setCurrent": 2,
+        "javax/microedition/lcdui/Displayable.removeCommand": 2,
+        "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+      },
+      "padroes": [
+        "MIDLET",
+        "TEM_STARTAPP"
+      ]
+    },
+    {
+      "arquivo": "BlocksCanvas.class",
+      "nome": "BlocksCanvas",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "MINIMUMSCROLLDELAY",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "level",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "random",
+          "desc": "Ljava/util/Random;",
+          "tipo_c": "Random*"
+        },
+        {
+          "nome": "initTime",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "timeleft",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "extraTime",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "elapsedTime",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "scores",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "parent",
+          "desc": "LBlocks;",
+          "tipo_c": "Blocks*"
+        },
+        {
+          "nome": "gameOver",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ROWS",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "COLS",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "MIDDLE",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "board",
+          "desc": "[[I",
+          "tipo_c": "int**"
+        },
+        {
+          "nome": "width",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "height",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "p1top",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "p2top",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "pleft",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "p1height",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "bsize",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "GAP",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "cellW",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "cellH",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "bgcolor",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "blockcolor",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "pencolor",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "bg",
+          "desc": "Ljavax/microedition/lcdui/Graphics;",
+          "tipo_c": "Graphics*"
+        },
+        {
+          "nome": "buf",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "fcal",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "state",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "fontH",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "fontW",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "fontW2",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "waitblock",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "direct",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "mblock_x",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "mblock_y",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "count",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "remains",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "fallen",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "maxblocks",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "imgs",
+          "desc": "[Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image**"
+        },
+        {
+          "nome": "left",
+          "desc": "[Z",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "runner",
+          "desc": "Ljava/lang/Thread;",
+          "tipo_c": "Thread*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlocks;)V",
+          "tipo_ret": "void",
+          "n_instr": 233,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "java/util/Random.<init>": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Image.createImage": 13,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Font.getFont": 1,
+            "javax/microedition/lcdui/Font.getHeight": 1,
+            "javax/microedition/lcdui/Font.stringWidth": 1
+          },
+          "constantes": [
+            [
+              8,
+              0
+            ],
+            [
+              11,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              20,
+              7
+            ],
+            [
+              21,
+              7
+            ],
+            [
+              25,
+              20
+            ],
+            [
+              28,
+              255
+            ],
+            [
+              31,
+              127
+            ],
+            [
+              34,
+              0
+            ],
+            [
+              37,
+              0
+            ],
+            [
+              40,
+              0
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              47,
+              6
+            ],
+            [
+              74,
+              0
+            ],
+            [
+              75,
+              0
+            ],
+            [
+              76,
+              8
+            ],
+            [
+              92,
+              120
+            ],
+            [
+              96,
+              0
+            ],
+            [
+              102,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              5,
+              "java/util/Random.<init>"
+            ],
+            [
+              55,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              59,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              66,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              71,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              77,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              82,
+              "javax/microedition/lcdui/Font.getHeight"
+            ],
+            [
+              88,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              98,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              104,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              110,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              116,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              122,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              128,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              150,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              156,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              162,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              168,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              174,
+              "javax/microedition/lcdui/Image.createImage"
+            ]
+          ],
+          "fields": [
+            [
+              6,
+              "putfield",
+              "BlocksCanvas.random"
+            ],
+            [
+              9,
+              "putfield",
+              "BlocksCanvas.extraTime"
+            ],
+            [
+              12,
+              "putfield",
+              "BlocksCanvas.elapsedTime"
+            ],
+            [
+              15,
+              "putfield",
+              "BlocksCanvas.scores"
+            ],
+            [
+              18,
+              "putfield",
+              "BlocksCanvas.gameOver"
+            ],
+            [
+              23,
+              "putfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              26,
+              "putfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              29,
+              "putfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              32,
+              "putfield",
+              "BlocksCanvas.blockcolor"
+            ],
+            [
+              35,
+              "putfield",
+              "BlocksCanvas.pencolor"
+            ],
+            [
+              38,
+              "putfield",
+              "BlocksCanvas.waitblock"
+            ],
+            [
+              41,
+              "putfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              45,
+              "putfield",
+              "BlocksCanvas.imgs"
+            ],
+            [
+              49,
+              "putfield",
+              "BlocksCanvas.left"
+            ],
+            [
+              52,
+              "putfield",
+              "BlocksCanvas.parent"
+            ],
+            [
+              56,
+              "putfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              60,
+              "putfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              63,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              65,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              67,
+              "putfield",
+              "BlocksCanvas.buf"
+            ]
+          ]
+        },
+        {
+          "nome": "reset",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 47,
+          "apis": {},
+          "constantes": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              2000
+            ],
+            [
+              21,
+              1
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              36,
+              6
+            ],
+            [
+              41,
+              3
+            ],
+            [
+              44,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "getstatic",
+              "BlocksCanvas.level"
+            ],
+            [
+              8,
+              "putfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              10,
+              "getfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              15,
+              "putfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              18,
+              "getfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              19,
+              "putfield",
+              "BlocksCanvas.timeleft"
+            ],
+            [
+              22,
+              "putfield",
+              "BlocksCanvas.state"
+            ],
+            [
+              25,
+              "putfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              30,
+              "getfield",
+              "BlocksCanvas.left"
+            ],
+            [
+              42,
+              "putfield",
+              "BlocksCanvas.mblock_x"
+            ],
+            [
+              45,
+              "putfield",
+              "BlocksCanvas.mblock_y"
+            ]
+          ]
+        },
+        {
+          "nome": "initBoard",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 204,
+          "apis": {
+            "java/util/Random.nextInt": 3,
+            "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              20,
+              0
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              32,
+              6
+            ],
+            [
+              34,
+              1
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              63,
+              1
+            ],
+            [
+              69,
+              1
+            ],
+            [
+              81,
+              1
+            ],
+            [
+              87,
+              1
+            ],
+            [
+              93,
+              7
+            ],
+            [
+              97,
+              7
+            ],
+            [
+              101,
+              0
+            ],
+            [
+              103,
+              3
+            ],
+            [
+              107,
+              1
+            ],
+            [
+              109,
+              6
+            ]
+          ],
+          "chamadas": [
+            [
+              29,
+              "java/util/Random.nextInt"
+            ],
+            [
+              106,
+              "java/util/Random.nextInt"
+            ],
+            [
+              117,
+              "java/util/Random.nextInt"
+            ],
+            [
+              129,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              138,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              184,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              10,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              23,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              28,
+              "getfield",
+              "BlocksCanvas.random"
+            ],
+            [
+              40,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              46,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              55,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              61,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              73,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              79,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              100,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              105,
+              "getfield",
+              "BlocksCanvas.random"
+            ],
+            [
+              116,
+              "getfield",
+              "BlocksCanvas.random"
+            ],
+            [
+              124,
+              "putfield",
+              "BlocksCanvas.waitblock"
+            ],
+            [
+              126,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              128,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              131,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              135,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              137,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              146,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              161,
+              "getfield",
+              "BlocksCanvas.board"
+            ]
+          ]
+        },
+        {
+          "nome": "getTop",
+          "desc": "(I)I",
+          "tipo_ret": "int",
+          "n_instr": 17,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "BlocksCanvas.p2top"
+            ],
+            [
+              5,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              11,
+              "getfield",
+              "BlocksCanvas.GAP"
+            ]
+          ]
+        },
+        {
+          "nome": "getLeft",
+          "desc": "(I)I",
+          "tipo_ret": "int",
+          "n_instr": 28,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              5,
+              "getfield",
+              "BlocksCanvas.pleft"
+            ],
+            [
+              7,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              13,
+              "getfield",
+              "BlocksCanvas.GAP"
+            ],
+            [
+              19,
+              "getfield",
+              "BlocksCanvas.pleft"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 741,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.drawString": 1,
+            "java/lang/System.currentTimeMillis": 2,
+            "java/lang/Thread.sleep": 1,
+            "java/lang/Math.min": 2,
+            "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 2,
+            "java/util/Random.nextInt": 2,
+            "javax/microedition/lcdui/Canvas.repaint": 1
+          },
+          "constantes": [
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              26,
+              16
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              42,
+              0
+            ],
+            [
+              47,
+              150
+            ],
+            [
+              87,
+              1000
+            ],
+            [
+              90,
+              4
+            ],
+            [
+              96,
+              2
+            ],
+            [
+              103,
+              4000
+            ],
+            [
+              117,
+              0
+            ],
+            [
+              134,
+              0
+            ],
+            [
+              143,
+              0
+            ],
+            [
+              148,
+              0
+            ],
+            [
+              153,
+              1
+            ],
+            [
+              166,
+              16
+            ],
+            [
+              169,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              31,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              36,
+              "java/lang/System.currentTimeMillis"
+            ],
+            [
+              75,
+              "java/lang/Thread.sleep"
+            ],
+            [
+              78,
+              "java/lang/System.currentTimeMillis"
+            ],
+            [
+              92,
+              "java/lang/Math.min"
+            ],
+            [
+              124,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              133,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              171,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              179,
+              "java/lang/Math.min"
+            ],
+            [
+              447,
+              "java/util/Random.nextInt"
+            ],
+            [
+              601,
+              "java/util/Random.nextInt"
+            ],
+            [
+              656,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              736,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ]
+          ],
+          "fields": [
+            [
+              11,
+              "getfield",
+              "BlocksCanvas.gameOver"
+            ],
+            [
+              14,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              17,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              46,
+              "getfield",
+              "BlocksCanvas.elapsedTime"
+            ],
+            [
+              49,
+              "putfield",
+              "BlocksCanvas.elapsedTime"
+            ],
+            [
+              52,
+              "getfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              54,
+              "getfield",
+              "BlocksCanvas.elapsedTime"
+            ],
+            [
+              57,
+              "getfield",
+              "BlocksCanvas.extraTime"
+            ],
+            [
+              59,
+              "putfield",
+              "BlocksCanvas.timeleft"
+            ],
+            [
+              83,
+              "getfield",
+              "BlocksCanvas.state"
+            ],
+            [
+              89,
+              "getfield",
+              "BlocksCanvas.fallen"
+            ],
+            [
+              95,
+              "getfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              113,
+              "getfield",
+              "BlocksCanvas.mblock_x"
+            ],
+            [
+              121,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              123,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              126,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              130,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              132,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              139,
+              "getfield",
+              "BlocksCanvas.mblock_x"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "BlocksCanvas.buf"
+            ]
+          ]
+        },
+        {
+          "nome": "paintTime",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 62,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setGrayScale": 2,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 6,
+            "java/lang/StringBuffer.toString": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              2,
+              1000
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              55,
+              16
+            ],
+            [
+              58,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              9,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              26,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              36,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              38,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              40,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              42,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              45,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              47,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              49,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              50,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              60,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.timeleft"
+            ],
+            [
+              6,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              8,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              11,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              15,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              17,
+              "getfield",
+              "BlocksCanvas.cellW"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.GAP"
+            ],
+            [
+              25,
+              "getfield",
+              "BlocksCanvas.p1height"
+            ],
+            [
+              28,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              30,
+              "getfield",
+              "BlocksCanvas.pencolor"
+            ],
+            [
+              33,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              44,
+              "getfield",
+              "BlocksCanvas.scores"
+            ],
+            [
+              48,
+              "getstatic",
+              "BlocksCanvas.level"
+            ]
+          ]
+        },
+        {
+          "nome": "drawWaitblock",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 28,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              5,
+              1
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              21,
+              16
+            ],
+            [
+              24,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              26,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              3,
+              "getfield",
+              "BlocksCanvas.imgs"
+            ],
+            [
+              9,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              11,
+              "getfield",
+              "BlocksCanvas.cellW"
+            ],
+            [
+              15,
+              "getfield",
+              "BlocksCanvas.GAP"
+            ]
+          ]
+        },
+        {
+          "nome": "moveBlock",
+          "desc": "(IIIII)V",
+          "tipo_ret": "void",
+          "n_instr": 45,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              25,
+              1
+            ],
+            [
+              38,
+              16
+            ],
+            [
+              41,
+              4
+            ]
+          ],
+          "chamadas": [
+            [
+              43,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              13,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              20,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              29,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              31,
+              "getfield",
+              "BlocksCanvas.imgs"
+            ]
+          ]
+        },
+        {
+          "nome": "findconnect",
+          "desc": "(III)V",
+          "tipo_ret": "void",
+          "n_instr": 124,
+          "apis": {},
+          "constantes": [
+            [
+              6,
+              -1
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              15,
+              7
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              28,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              43,
+              7
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              56,
+              1
+            ],
+            [
+              61,
+              1
+            ],
+            [
+              69,
+              6
+            ],
+            [
+              72,
+              6
+            ],
+            [
+              77,
+              1
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              91,
+              1
+            ],
+            [
+              98,
+              6
+            ],
+            [
+              105,
+              1
+            ],
+            [
+              113,
+              1
+            ],
+            [
+              119,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              18,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              27,
+              "getstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              30,
+              "putstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              46,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              55,
+              "getstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              58,
+              "putstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              75,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              84,
+              "getstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              87,
+              "putstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              103,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              112,
+              "getstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              115,
+              "putstatic",
+              "BlocksCanvas.count"
+            ]
+          ]
+        },
+        {
+          "nome": "reverse",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 36,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              24,
+              -1
+            ],
+            [
+              29,
+              7
+            ],
+            [
+              33,
+              7
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              14,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              19,
+              "getfield",
+              "BlocksCanvas.board"
+            ]
+          ]
+        },
+        {
+          "nome": "remove",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 39,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              32,
+              7
+            ],
+            [
+              36,
+              7
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              14,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              26,
+              "getfield",
+              "BlocksCanvas.remains"
+            ],
+            [
+              29,
+              "putfield",
+              "BlocksCanvas.remains"
+            ]
+          ]
+        },
+        {
+          "nome": "rearrange",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 54,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              14,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              45,
+              7
+            ],
+            [
+              49,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              12,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              35,
+              "getfield",
+              "BlocksCanvas.board"
+            ]
+          ]
+        },
+        {
+          "nome": "clearBlock",
+          "desc": "(II)V",
+          "tipo_ret": "void",
+          "n_instr": 30,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1
+          },
+          "constantes": [
+            [
+              13,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              19,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              28,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ]
+          ],
+          "fields": [
+            [
+              9,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              16,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              18,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              25,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ],
+            [
+              27,
+              "getfield",
+              "BlocksCanvas.bsize"
+            ]
+          ]
+        },
+        {
+          "nome": "raiseBlocks",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 134,
+          "apis": {
+            "java/util/Random.nextInt": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              31,
+              7
+            ],
+            [
+              35,
+              7
+            ],
+            [
+              37,
+              0
+            ],
+            [
+              40,
+              1
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              48,
+              1
+            ],
+            [
+              50,
+              6
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              60,
+              6
+            ],
+            [
+              63,
+              1
+            ],
+            [
+              70,
+              5
+            ],
+            [
+              75,
+              1
+            ],
+            [
+              81,
+              5
+            ],
+            [
+              86,
+              1
+            ],
+            [
+              92,
+              6
+            ],
+            [
+              102,
+              6
+            ]
+          ],
+          "chamadas": [
+            [
+              47,
+              "java/util/Random.nextInt"
+            ],
+            [
+              122,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              9,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              23,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              46,
+              "getfield",
+              "BlocksCanvas.random"
+            ],
+            [
+              59,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              69,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              80,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              91,
+              "getfield",
+              "BlocksCanvas.board"
+            ],
+            [
+              106,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              108,
+              "getfield",
+              "BlocksCanvas.imgs"
+            ],
+            [
+              129,
+              "getfield",
+              "BlocksCanvas.remains"
+            ],
+            [
+              132,
+              "putfield",
+              "BlocksCanvas.remains"
+            ]
+          ]
+        },
+        {
+          "nome": "isGameover",
+          "desc": "()Z",
+          "tipo_ret": "int",
+          "n_instr": 3,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.gameOver"
+            ]
+          ]
+        },
+        {
+          "nome": "gameover",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 50,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setGrayScale": 2,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              9,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              35,
+              2
+            ],
+            [
+              39,
+              2
+            ],
+            [
+              43,
+              16
+            ],
+            [
+              46,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              29,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              48,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              3,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              6,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              8,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              12,
+              "getfield",
+              "BlocksCanvas.fontW2"
+            ],
+            [
+              17,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.fontW2"
+            ],
+            [
+              23,
+              "getfield",
+              "BlocksCanvas.fontH"
+            ],
+            [
+              26,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              28,
+              "getfield",
+              "BlocksCanvas.pencolor"
+            ],
+            [
+              31,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              34,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              38,
+              "getfield",
+              "BlocksCanvas.height"
+            ]
+          ]
+        },
+        {
+          "nome": "youwin",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 50,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setGrayScale": 2,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              9,
+              2
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              35,
+              2
+            ],
+            [
+              39,
+              2
+            ],
+            [
+              43,
+              16
+            ],
+            [
+              46,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              29,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              48,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              3,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              6,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              8,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              12,
+              "getfield",
+              "BlocksCanvas.fontW2"
+            ],
+            [
+              17,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              21,
+              "getfield",
+              "BlocksCanvas.fontW2"
+            ],
+            [
+              23,
+              "getfield",
+              "BlocksCanvas.fontH"
+            ],
+            [
+              26,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              28,
+              "getfield",
+              "BlocksCanvas.pencolor"
+            ],
+            [
+              31,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              34,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              38,
+              "getfield",
+              "BlocksCanvas.height"
+            ]
+          ]
+        },
+        {
+          "nome": "endGame",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 7,
+          "apis": {},
+          "constantes": [
+            [
+              4,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "BlocksCanvas.runner"
+            ],
+            [
+              5,
+              "putfield",
+              "BlocksCanvas.gameOver"
+            ]
+          ]
+        },
+        {
+          "nome": "restartGame",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 54,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1
+          },
+          "constantes": [
+            [
+              6,
+              5
+            ],
+            [
+              9,
+              1
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              34,
+              0
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              51,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              30,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              39,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "BlocksCanvas.initTime"
+            ],
+            [
+              3,
+              "putfield",
+              "BlocksCanvas.timeleft"
+            ],
+            [
+              5,
+              "getfield",
+              "BlocksCanvas.state"
+            ],
+            [
+              8,
+              "getstatic",
+              "BlocksCanvas.level"
+            ],
+            [
+              11,
+              "putstatic",
+              "BlocksCanvas.level"
+            ],
+            [
+              14,
+              "putstatic",
+              "BlocksCanvas.level"
+            ],
+            [
+              20,
+              "putfield",
+              "BlocksCanvas.scores"
+            ],
+            [
+              22,
+              "putstatic",
+              "BlocksCanvas.count"
+            ],
+            [
+              24,
+              "putfield",
+              "BlocksCanvas.elapsedTime"
+            ],
+            [
+              25,
+              "putfield",
+              "BlocksCanvas.extraTime"
+            ],
+            [
+              27,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              29,
+              "getfield",
+              "BlocksCanvas.bgcolor"
+            ],
+            [
+              32,
+              "getfield",
+              "BlocksCanvas.bg"
+            ],
+            [
+              36,
+              "getfield",
+              "BlocksCanvas.width"
+            ],
+            [
+              38,
+              "getfield",
+              "BlocksCanvas.height"
+            ],
+            [
+              43,
+              "getfield",
+              "BlocksCanvas.gameOver"
+            ],
+            [
+              47,
+              "putfield",
+              "BlocksCanvas.gameOver"
+            ],
+            [
+              52,
+              "putfield",
+              "BlocksCanvas.gameOver"
+            ]
+          ]
+        },
+        {
+          "nome": "start",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              4,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              8,
+              "java/lang/Thread.start"
+            ]
+          ],
+          "fields": [
+            [
+              5,
+              "putfield",
+              "BlocksCanvas.runner"
+            ],
+            [
+              7,
+              "getfield",
+              "BlocksCanvas.runner"
+            ]
+          ]
+        },
+        {
+          "nome": "pause",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "dest",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [
+            [
+              2,
+              1
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.parent"
+            ]
+          ]
+        },
+        {
+          "nome": "keyRepeated",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": []
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 21,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1
+          },
+          "constantes": [
+            [
+              10,
+              1
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              18,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              5,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              11,
+              "putfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              15,
+              "putfield",
+              "BlocksCanvas.direct"
+            ],
+            [
+              19,
+              "putfield",
+              "BlocksCanvas.direct"
+            ]
+          ]
+        },
+        {
+          "nome": "<clinit>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 5,
+          "apis": {},
+          "constantes": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "putstatic",
+              "BlocksCanvas.level"
+            ],
+            [
+              3,
+              "putstatic",
+              "BlocksCanvas.count"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "java/util/Random.<init>": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Image.createImage": 13,
+        "javax/microedition/lcdui/Image.getGraphics": 1,
+        "javax/microedition/lcdui/Font.getFont": 1,
+        "javax/microedition/lcdui/Font.getHeight": 1,
+        "javax/microedition/lcdui/Font.stringWidth": 1,
+        "java/util/Random.nextInt": 6,
+        "javax/microedition/lcdui/Graphics.setGrayScale": 10,
+        "javax/microedition/lcdui/Graphics.fillRect": 7,
+        "javax/microedition/lcdui/Graphics.drawImage": 7,
+        "javax/microedition/lcdui/Graphics.drawString": 4,
+        "java/lang/System.currentTimeMillis": 2,
+        "java/lang/Thread.sleep": 1,
+        "java/lang/Math.min": 2,
+        "javax/microedition/lcdui/Canvas.repaint": 1,
+        "java/lang/StringBuffer.<init>": 1,
+        "java/lang/StringBuffer.append": 6,
+        "java/lang/StringBuffer.toString": 1,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/lcdui/Canvas.getGameAction": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT",
+        "TEM_RUN",
+        "USA_IMAGE"
+      ]
+    },
+    {
+      "arquivo": "BlocksHelp.class",
+      "nome": "BlocksHelp",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "parent",
+          "desc": "LBlocks;",
+          "tipo_c": "Blocks*"
+        },
+        {
+          "nome": "buf",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "imgLogo",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "bg",
+          "desc": "Ljavax/microedition/lcdui/Graphics;",
+          "tipo_c": "Graphics*"
+        },
+        {
+          "nome": "fcal",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "width",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "height",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(LBlocks;)V",
+          "tipo_ret": "void",
+          "n_instr": 54,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "javax/microedition/lcdui/Canvas.getWidth": 3,
+            "javax/microedition/lcdui/Canvas.getHeight": 2,
+            "javax/microedition/lcdui/Image.createImage": 3,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1
+          },
+          "constantes": [
+            [
+              27,
+              255
+            ],
+            [
+              31,
+              0
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              40,
+              120
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              18,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              28,
+              "javax/microedition/lcdui/Graphics.setGrayScale"
+            ],
+            [
+              34,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              37,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              39,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              44,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              49,
+              "javax/microedition/lcdui/Image.createImage"
+            ]
+          ],
+          "fields": [
+            [
+              5,
+              "putfield",
+              "BlocksHelp.width"
+            ],
+            [
+              9,
+              "putfield",
+              "BlocksHelp.height"
+            ],
+            [
+              12,
+              "putfield",
+              "BlocksHelp.parent"
+            ],
+            [
+              15,
+              "getfield",
+              "BlocksHelp.width"
+            ],
+            [
+              17,
+              "getfield",
+              "BlocksHelp.height"
+            ],
+            [
+              19,
+              "putfield",
+              "BlocksHelp.buf"
+            ],
+            [
+              22,
+              "getfield",
+              "BlocksHelp.buf"
+            ],
+            [
+              24,
+              "putfield",
+              "BlocksHelp.bg"
+            ],
+            [
+              26,
+              "getfield",
+              "BlocksHelp.bg"
+            ],
+            [
+              30,
+              "getfield",
+              "BlocksHelp.bg"
+            ],
+            [
+              45,
+              "putfield",
+              "BlocksHelp.imgLogo"
+            ],
+            [
+              50,
+              "putfield",
+              "BlocksHelp.imgLogo"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 16,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1
+          },
+          "constantes": [
+            [
+              5,
+              2
+            ],
+            [
+              9,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              12,
+              2
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              14,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "BlocksHelp.imgLogo"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "javax/microedition/lcdui/Canvas.getWidth": 4,
+        "javax/microedition/lcdui/Canvas.getHeight": 3,
+        "javax/microedition/lcdui/Image.createImage": 3,
+        "javax/microedition/lcdui/Image.getGraphics": 1,
+        "javax/microedition/lcdui/Graphics.setGrayScale": 1,
+        "javax/microedition/lcdui/Graphics.fillRect": 1,
+        "javax/microedition/lcdui/Graphics.drawImage": 1
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "USA_IMAGE"
+      ]
+    }
+  ],
+  "n_classes": 3
+}
